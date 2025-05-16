@@ -1,0 +1,237 @@
+
+/* Paris Hero Section Modern Font */
+.position-absolute.top-0.start-0.w-100.h-100.bg-dark.bg-opacity-50.d-flex.flex-column.justify-content-center.align-items-center > p {
+    font-family: 'Dancing Script', 'Montserrat', cursive, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #ffe4e1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  
+  /* Modern About Paris Section */
+  .about-paris-section {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(60, 60, 120, 0.12);
+    padding: 2.5rem 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .about-paris-section iframe {
+    width: 100% !important;
+  }
+  
+  .about-paris-section:hover {
+    box-shadow: 0 16px 48px rgba(60, 60, 120, 0.18);
+  }
+  
+  .about-paris-section h2 {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #7c3aed;
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .about-paris-section p {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 1.18rem;
+    color: #22223b;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .about-paris-section .row {
+      flex-direction: column;
+    }
+    .about-paris-section .col-lg-6 {
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .about-paris-section iframe {
+      width: 100% !important;
+      height: 250px !important;
+    }
+  }
+  
+  .about-paris-section iframe {
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(60, 60, 120, 0.10);
+    margin-top: 1rem;
+  }
+  
+  /* Carousel Styles */
+  .home-container2 {
+    padding-top: 4%;
+  }
+  
+  .carousel-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 20px;
+    height: 480px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .card-carousel {
+    display: flex;
+    height: 450px;
+    gap: 15px;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 calc(25% - 15px);
+    min-width: calc(25% - 15px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 17px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(249, 249, 76, 0.2);
+  }
+  
+  .card img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    border-radius: 15px;
+  }
+  
+  .card-overlay p {
+    margin: 0;
+    transition: transform 0.5s ease;
+    font-weight: bold;
+  }
+  
+  .card:hover img,
+  .card:hover .card-overlay p {
+    transform: scale(1.05);
+  }
+  
+  .prev-things,
+  .next-things,
+  .prev-places,
+  .next-places {
+    position: relative;
+    left: 88vw;
+    background-color: #0a8ae8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(72, 116, 248, 0.4);
+    border: none;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    line-height: 15px;
+    padding-bottom: 12px;
+  }
+  
+  .prev-things:focus,
+  .next-things:focus,
+  .prev-places:focus,
+  .next-places:focus {
+    outline: none;
+  }
+  
+  .prev-things:hover,
+  .next-things:hover,
+  .prev-places:hover,
+  .next-places:hover {
+    background-color: #5a6da8;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(10, 138, 232, 0.5);
+  }
+  
+  @media (max-width: 950px) {
+    .prev-things,
+    .next-things,
+    .prev-places,
+    .next-places {
+      left: 80vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .prev-things,
+    .next-things,
+    .prev-places,
+    .next-places {
+      left: 70vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .prev-things,
+    .next-things,
+    .prev-places,
+    .next-places {
+      visibility: hidden;
+    }
+  }
+  
+  .trip-inspiration h2 {
+    position: relative;
+    top: 50px;
+    margin-left: 3.3rem;
+    font-size: 31px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .trip-inspiration h2::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 165px;
+    height: 15px;
+    background: linear-gradient(to right, #5a6da8, #0a8ae8);
+    box-shadow: #4a8fd1 4px 4px 8px;
+  }
+  
+  

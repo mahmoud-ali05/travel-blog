@@ -1,0 +1,135 @@
+.navi {
+    background: transparent !important;
+    box-shadow: none !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    font-size: 20px;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* Add background for non-home pages */
+.navi:not(.home-nav) {
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+    padding: 10px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.center-links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navi .nav-link {
+    color: rgb(14, 46, 173) !important;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 0 10px;
+    background: transparent;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.navi .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(14, 46, 173);
+    transition: width 0.3s ease;
+}
+
+.navi .nav-link:hover::after {
+    width: 100%;
+}
+
+.navi .btn {
+    background-color: rgba(14, 46, 173, 0.1) !important;
+    color: rgb(14, 46, 173) !important;
+    border: none;
+    margin-left: 10px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navi .btn:hover {
+    background-color: rgb(14, 46, 173) !important;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    background: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    color: rgb(14, 46, 173);
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background: rgba(14, 46, 173, 0.1);
+    color: rgb(14, 46, 173);
+    transform: translateX(5px);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .navi {
+        padding: 10px 20px;
+    }
+    
+    .center-links {
+        gap: 20px;
+    }
+    
+    .navi .nav-link {
+        font-size: 16px;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+}

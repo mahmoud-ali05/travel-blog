@@ -1,0 +1,120 @@
+/* Tours.module.css */
+.toursSection {
+  padding: 2rem 0;
+  background: #f8f9fa;
+}
+
+.toursGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.tourCard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #e0e7ef;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+}
+
+.tourCard:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px #c7d6ee;
+}
+
+.tourImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.tourImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+}
+
+.tourBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #ffd54f;
+  color: #135c4a;
+  font-weight: bold;
+  padding: 6px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px #ffe08288;
+}
+
+.tourInfo {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tourTitle {
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #135c4a;
+  margin-bottom: 0.5rem;
+}
+
+.tourMeta {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tourBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.tourPrice {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.tourPer {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.bookBtn {
+  background: linear-gradient(90deg, #ffe082 0%, #ffd54f 100%);
+  color: #135c4a;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  box-shadow: 0 2px 8px #ffd54f44;
+}
+
+.bookBtn:hover {
+  background: #135c4a;
+  color: #ffe082;
+}
+
+.high {
+    margin-top: 500px;
+}

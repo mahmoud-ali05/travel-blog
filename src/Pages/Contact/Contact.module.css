@@ -1,0 +1,131 @@
+.Contactsss{
+    color: rgb(111, 86, 114) !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.contactContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.contactContent {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.contactTitle {
+  color: #2d3436;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contactSubtitle {
+  color: #636e72;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  position: relative;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.formGroup textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+.submitButton {
+  background: #6c5ce7;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background: #5b4bc4;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactContent {
+    padding: 2rem;
+  }
+
+  .contactTitle {
+    font-size: 2rem;
+  }
+
+  .contactSubtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactContainer {
+    padding: 1rem;
+  }
+
+  .contactContent {
+    padding: 1.5rem;
+  }
+
+  .contactTitle {
+    font-size: 1.75rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 0.8rem;
+  }
+}

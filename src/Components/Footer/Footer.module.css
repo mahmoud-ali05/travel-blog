@@ -1,0 +1,142 @@
+.footer {
+  background: linear-gradient(135deg, #1a2526 0%, #2c3e50 100%);
+  color: white;
+  padding: 60px 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.footerTitle {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footerTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background: #3498db;
+  transition: width 0.3s ease;
+}
+
+.footerTitle:hover::after {
+  width: 50px;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkItem {
+  margin-bottom: 12px;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+}
+
+.link:hover {
+  color: white !important;
+  padding-left: 10px;
+}
+
+.link::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.link:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.socialIcon {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.contactIcon {
+  color: #3498db;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footerContent {
+  animation: fadeIn 0.8s ease-out;
+}
